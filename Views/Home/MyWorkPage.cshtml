@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--https://youtu.be/CQZxeoQeo5c-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Page</title>
+    <!-- Importing custom font https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        /* create different classes within style to customize the webpage  */
+        body {
+			font-family: 'Times New Roman', serif; /* font for default web page text */
+			text-align: center; /* Align all the text to the center of the page*/ 
+            /*https://www.w3schools.com/html/html_images_background.asp*/
+			background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-blue-flower-with-dark-petals-picture-image_2775002.jpg"); /*import the background image from the web */
+			background-size: cover; /*background image should cover the whole page */
+			background-position: center; /* background image should be generated at the center of the page */
+        }
+
+        .title {
+			/*properies for the title text */
+            font-size: 100px;
+            color: cornflowerblue;
+            font-family: 'Pacifico', sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .services {
+            /*properies for the services text */
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .artGallery {
+            /*properies for the artGallery text */
+            color: cornflowerblue;
+            font-size: 40px;
+            text-align: left;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: 'Berlin Sans FB', serif;
+        }
+
+            .artGallery img {
+                /*https://www.w3schools.com/css/css3_images.asp*/
+                /*properies for the images */
+                width: 300px; /*width of the images */
+                height: auto; /*height of the images are auto generated */
+                margin: 10px; /*margin for the images  */
+                border: 2px solid cornflowerblue; /*adds a boarder around the images to make them stand out more */
+                border-radius: 5px; /*defines the thickness of the boarder */
+                transition: transform 0.3s ease; /*image expands for 0.3s when its hovered over */
+            }
+
+                .artGallery img:hover {
+                    /*https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+                    /*method to make the image expand when its hovered on */
+                    transform: scale(1.1);
+                }
+
+                .artText{
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: 'Times New Roman', serif;
+                }
+
+    </style>
+</head>
+<body>
+	<!-- Input the text to be displayed on the webpage using <h>. The text will inherit its text properties from the classes -->
+    <h1 class="title">KhumaloCraft</h1>
+    <h2 class="services">
+        KhumaloCraft Emporium is an E-Commerce website that has helped numerous artisans around the world showcase their unique craftwork and sell it to consumers by providing them with a
+        user-friendly and secure platform which has changed the way they market their work. KhumaloCraft Emporium has also allowed artisans to expand their skills and learn new techniques from other,
+        like-minded artisans making their work more diverse.
+    </h2>
+    <h3 class="artGallery">KhumaloCraft Art Gallery</h3>
+    <!-- <div> is used to divide the images on the webpage. https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
+    <div class="artGallery">
+        <img src="https://st2.depositphotos.com/1002772/11700/i/450/depositphotos_117003066-stock-photo-traditional-turkish-ceramics.jpg" /><!-- images imported from the internet  -->
+        <!-- <p>is used to add a capton for each image -->
+        <p class=" artText">Traditional Italian ceramic craft piece. Shop for R6,500</p>
+        <img src="https://www.potteryboys.com/uploads/9/5/5/6/9556744/gloss-blue-grouping-smaller-pix_orig.jpg" />
+        <p class=" artText">Handmade clay pottery. Shop for R2,000</p>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c32e9ac6-a733-407e-8633-98063d432e97/dfnzmsr-11134f6c-fb51-4610-a6be-f1c0d0ed23b7.jpg/v1/fill/w_800,h_534,q_75,strp/wall_art__home_decor__oil_painting__374__by_nct_art_dfnzmsr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTM0IiwicGF0aCI6IlwvZlwvYzMyZTlhYzYtYTczMy00MDdlLTg2MzMtOTgwNjNkNDMyZTk3XC9kZm56bXNyLTExMTM0ZjZjLWZiNTEtNDYxMC1hNmJlLWYxYzBkMGVkMjNiNy5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.gvOgZ5FZ5g7zMcHXbxw_ftl5sw3YJNsxrwJG_BxR0g8" />
+        <p class=" artText">Home decor oil painting. Shop for R7,600</p>
+    </div>
+</body>
+</html>
